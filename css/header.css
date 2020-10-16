@@ -1,0 +1,20 @@
+
+header h1{
+    font-size: 25px;
+    color: darkorange;
+    padding: 0px;
+    margin: 0px;
+    align-self: center;
+    justify-content: center;
+}
+.conteiner-navbar{
+    display: flex;
+    border: 1px solid black;
+    background-color: slategrey;
+}
+.conteiner-navbar a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: orange;
+
+}

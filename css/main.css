@@ -1,0 +1,10 @@
+.conteiner{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.notice-principal{
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 200px;
+}
