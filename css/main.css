@@ -1,10 +1,125 @@
 .conteiner{
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
-.notice-principal{
-    flex-wrap: wrap;
-    align-items: center;
-    max-width: 200px;
+.conteiner div{
+    margin: 1px 1px 2px 1px;
+    border-bottom: 1px solid black;
+    padding-bottom: 2px;
+}
+.conteiner a{
+    text-decoration: none;
+}
+.conteiner a h2{
+    color: black;
+    text-decoration: none;
+    margin-top: 2px;
+    margin-bottom: 1px;
+    font: 17px;
+}
+.conteiner a h2:hover{
+    color: orange;
+}
+.conteiner a h4{
+    color: black;
+    text-decoration: none;
+    margin-top: 2px;
+    margin-bottom: 1px;
+    font: 17px;
+}
+.conteiner a p{
+    color: rgb(83, 83, 83);
+    text-decoration: none;
+    margin: 0px;
+    font-size: 13;
+}
+.conteiner .box1{
+    flex: 3;
+}
+.conteiner .box1 a h2{
+    color: darkorange;
+    align-self: center;
+}
+.conteiner .box1 a h2:hover{
+    color: darkgray;
+    font-weight: bold;
+}
+.conteiner .box2{
+    flex: 1;
+}
+.conteiner .box3{
+    flex: 1;
+}
+.conteiner aside{
+    border-top: 3px solid darkorange;
+    border-bottom: 3px solid darkorange;
+}
+.conteiner aside h3{
+    color: tomato;
+    font-size: 25px;
+    margin: 0px 0px 5px 0px;
+    text-align: center;
+    background-color: lightgray;
+}
+.conteiner aside a h4{
+    color: black;
+    font-size: 20px;
+    margin: 0px 0px 5px 0px;
+}
+.conteiner aside a h4:hover{
+    color: tomato;
+}
+.conteiner aside p{
+    visibility: hidden;
+    color: rgb(83, 83, 83);
+    font-size: 15px;
+    margin: 0px 0px 5px 0px;
+}
+@media only screen and (min-width: 768px){
+    .conteiner{
+    flex-direction: row;
+    flex-flow: row wrap;
+    }
+    .conteiner div{
+        margin: 2px;
+        border-bottom: 1px;
+    }
+    .conteiner aside{
+        width: 20%;
+    }
+    .conteiner a h2{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        flex-flow: row wrap;
+    }
+    .conteiner a p{
+        font-size: 15;
+    }
+    .conteiner .box1{
+        margin-right: 5px;
+        padding-right: 5px;
+    }
+    .conteiner .box2{
+        margin-right: 5px;
+    }
+    .conteiner aside{
+        border-top: 5px solid darkorange;
+        border-bottom: 5px solid darkorange;
+        border-left: 2px solid darkorange;
+        background-color: lightgray;
+    }
+    .conteiner aside h3{
+        color: tomato;
+        font-size: 25px;
+        margin: 0px 0px 5px 0px;
+        padding: 3px;
+        text-align: center;
+    }
+    .conteiner aside p{
+        visibility: visible;
+        color: rgb(70, 70, 70);
+        font-size: 16px;
+        margin: 0px 0px 5px 0px;
 }
