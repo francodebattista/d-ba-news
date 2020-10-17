@@ -20,10 +20,10 @@ header h1{
 display: none;
 }
 .menu{
-    width: 35px;
-    height: 5px;
+    width: 30px;
+    height: 4px;
     background-color: darkorange;
-    margin: 6px 0;
+    margin: 5px 0;
 }
 .conteiner-navbar{
     background-color: slategrey;
@@ -84,9 +84,7 @@ display: none;
     }
     .botton{
         display: inline;
-
     }
-        }
     .menu{
         visibility: visible;
     }

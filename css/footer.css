@@ -1,6 +1,26 @@
 footer{
     background-color: rgb(97, 97, 97);
     color: whitesmoke;
-    padding: 20px;
+    padding: 5px;
+    margin: 5px;
     text-align: center;
+    font-size: 15px;
+    border: 3px inset gray;
+}
+p{
+    margin: 0px;
+}
+.footer-class{
+    font-size: 12px;
+    font-style: italic;
+}
+@media only screen and (max-width: 768px){
+    footer{
+        font-size: 10px;
+        padding: 3px;
+        margin: 3px;
+    }
+    footer-class{
+        font-size: 9px;
+    }
 }
