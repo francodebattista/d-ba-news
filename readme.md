@@ -8,7 +8,7 @@ the main idea of this project is to make a main page with several news from dife
 
 ## my page
 
-url
+url: https://francodebattista.github.io/d-ba-news/ 
 
 ---
 
