@@ -15,10 +15,9 @@ header h1{
     padding: 0px;
     margin: 0px 0px 10px 0px;
     font-family: serif;
-    display;
 }
-.botton{
-display: none;
+ul{
+    display: none;
 }
 .menu{
     width: 30px;
@@ -26,49 +25,18 @@ display: none;
     background-color: darkorange;
     margin: 5px 10px;
 }
-.conteiner-navbar{
-    background-color: slategrey;
-    border: 1px solid grey;
-    padding: 0px;
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 25px;
-}
-.conteiner-navbar ul{
-    list-style: none;
-    padding: opx 0px 0px 10px;
-    margin: 0px;
-}
-.conteiner-navbar li{
-    display: inline;
-}
-.conteiner-navbar a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: darkorange;
-    padding-right: 25px;
-    font-size: 20px;
-}
-.conteiner-navbar a:hover{
-    color: orange;
-}
 .advertisement{
-    margin: 2px 0px 15px 0px;
+    margin: 2px 0px 5px 0px;
     padding: 0px;
-    border: 2px solid black;
     width: 100%;
 }
-.advertisemen img{
-    width: 100%;
-    height: 100px;
+.advertisement img{
+    width: 90%;
+    margin-left: 5%;
 }
-.current a{
-    color: white;
-    font-weight: bold;
-}
-@media only screen and (max-width: 768px){
-    .conteiner-navbar{
-        display: none;
+@media only screen and (min-width: 768px){
+    ul{
+        display: inline;
     }
     header h1{
         text-align: center;
@@ -78,16 +46,46 @@ display: none;
         margin: 0px;
         font-family: serif;
     }
-    .advertisement{
-        margin: 1px 0px 3px 0px;
-        padding: 0px 0px 0px 0px;
-        border: 1px solid black;
-        width: 100%;
+    .conteiner-navbar{
+        background-color: slategrey;
+        border: 1px solid grey;
+        padding: 0px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 25px;
     }
-    .botton{
+    .conteiner-navbar ul{
+        list-style: none;
+        padding: opx 0px 0px 10px;
+        margin: 0px;
+    }
+    .conteiner-navbar li{
         display: inline;
     }
-    .menu{
-        visibility: visible;
+    .conteiner-navbar a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: darkorange;
+        padding-right: 25px;
+        font-size: 20px;
+    }
+    .conteiner-navbar a:hover{
+        color: orange;
+    }
+    .current a{
+        color: white;
+        font-weight: bold;
+    }
+    .advertisement{
+        margin: 1px 0px 3px 0px;
+        padding: 0px;
+    }
+    .advertisement img{
+        width: 90%;
+        margin: 2px 0px 15px 0px;
+        margin-left: 5%;
+    }
+    .botton{
+        display: none;
     }
 }
