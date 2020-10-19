@@ -15,6 +15,7 @@ header h1{
     padding: 0px;
     margin: 0px 0px 10px 0px;
     font-family: serif;
+    display;
 }
 .botton{
 display: none;
@@ -23,7 +24,7 @@ display: none;
     width: 30px;
     height: 4px;
     background-color: darkorange;
-    margin: 5px 0;
+    margin: 5px 10px;
 }
 .conteiner-navbar{
     background-color: slategrey;
@@ -53,12 +54,13 @@ display: none;
 }
 .advertisement{
     margin: 2px 0px 15px 0px;
-    padding: 0px 0px 0px 0px;
+    padding: 0px;
     border: 2px solid black;
     width: 100%;
 }
 .advertisemen img{
     width: 100%;
+    height: 100px;
 }
 .current a{
     color: white;

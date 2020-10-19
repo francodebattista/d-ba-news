@@ -1,4 +1,18 @@
+aside{
+    flex: 1;
+    border-top: 3px solid darkorange;
+    background-color: lightgrey;
+}
+h3{
+    background-color: lightgrey;
+    width: 100%;
+}
+.main-conteiner{
+    display: flex;
+    flex-direction: column;
+}
 .conteiner{
+    flex: 4;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +50,7 @@
     font-size: 13;
 }
 .conteiner .box1{
-    flex: 3;
+    flex: 1;
 }
 .conteiner .box1 a h2{
     color: darkorange;
@@ -52,43 +66,162 @@
 .conteiner .box3{
     flex: 1;
 }
-.conteiner aside{
+.conteiner-aside{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+ }
+ .conteiner-aside div{
+     margin: 1px 1px 2px 1px;
+     border-bottom: 1px solid black;
+     padding-bottom: 2px;
+     background-color: lightgrey;
+ }
+ .conteiner-aside a{
+     text-decoration: none;
+ }
+ .conteiner-aside h3{
+     color: tomato;
+     font-size: 25px;
+     margin: 0px 0px 5px 0px;
+     text-align: center;
+ }
+ .conteiner-aside a h4{
+     color: black;
+     font-size: 20px;
+     margin: 0px 0px 5px 0px;
+ }
+ .conteiner-aside a h4:hover{
+     color: tomato;
+ }
+ .conteiner-aside p{
+     color: rgb(83, 83, 83);
+     font-size: 15px;
+     margin: 0px 0px 5px 0px;
+ }
+.conteiner2{
+    margin-top: 10px;
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
     border-top: 3px solid darkorange;
-    border-bottom: 3px solid darkorange;
 }
-.conteiner aside h3{
-    color: tomato;
-    font-size: 25px;
-    margin: 0px 0px 5px 0px;
-    text-align: center;
-    background-color: lightgray;
+.conteiner2 div{
+    margin: 1px 1px 2px 1px;
+    border-bottom: 1px solid black;
+    padding-bottom: 2px;
 }
-.conteiner aside a h4{
+.conteiner2 a{
+    text-decoration: none;
+}
+.conteiner2 a h2{
     color: black;
-    font-size: 20px;
-    margin: 0px 0px 5px 0px;
+    text-decoration: none;
+    margin-top: 2px;
+    margin-bottom: 1px;
+    font: 17px;
 }
-.conteiner aside a h4:hover{
-    color: tomato;
+.conteiner2 a h2:hover{
+    color: orange;
 }
-.conteiner aside p{
-    visibility: hidden;
+.conteiner2 a p{
     color: rgb(83, 83, 83);
-    font-size: 15px;
-    margin: 0px 0px 5px 0px;
+    text-decoration: none;
+    margin: 0px;
+    font-size: 13;
+}
+.conteiner2 .box4{
+    flex: 3;
+}
+.conteiner2 .box5{
+    flex: 1;
+}
+.conteiner2 .box6{
+    flex: 1;
+}
+@media only screen and (max-width: 480px){
+    .conteiner a{
+        font-size: 10px;
+    }
+    .conteiner2{
+        margin-top: 0px;
+    }
+    .conteiner2 a{
+        font-size: 10px;
+    }
+    .conteiner-aside h3{
+        color: tomato;
+        font-size: 20px;
+        margin: 0px 0px 3px 0px;
+        text-align: center;
+    }
+    .conteiner-aside a img{
+        display: none;
+    }
+    .conteiner-aside a h4{
+        font-size: 15px;
+    }
+    .conteiner-aside a p{
+        display: none;
+    }
 }
 @media only screen and (min-width: 768px){
+    aside{
+        background-color: whitesmoke;
+    }
+    .main-conteiner{
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 50%;
+    }
+    .conteiner-aside{
+        align-items: baseline;
+        justify-content: flex-start;
+        margin-top: 0px;
+    }
+    .conteiner-aside h3{
+        margin: 0px;
+    }
+    .conteiner2{
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-top: 0px;
+    }
+    .conteiner2 .box4{
+        flex: 1;
+    }
+    .conteiner2 .box5{
+        flex: 1;
+    }
+    .conteiner2 .box6{
+        flex: 1;
+    }
+}
+@media only screen and (min-width: 900px){
+    .main-conteiner{
+        flex-direction: row;
+    }
     .conteiner{
     flex-direction: row;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     }
     .conteiner div{
         margin: 2px;
         border-bottom: 1px;
     }
-    .conteiner aside{
-        width: 20%;
-    }
+    .conteiner2{
+        flex-direction: row;
+        flex-wrap: wrap;
+        }
+    .conteiner2 div{
+            margin: 2px;
+            border-bottom: 1px;
+        }
     .conteiner a h2{
         margin-top: 5px;
         margin-bottom: 5px;
@@ -100,27 +233,40 @@
     .conteiner .box1{
         margin-right: 5px;
         padding-right: 5px;
+        flex: 3;
     }
     .conteiner .box2{
         margin-right: 5px;
+        flex: 1;
     }
-    .conteiner aside{
-        border-top: 5px solid darkorange;
-        border-bottom: 5px solid darkorange;
-        border-left: 2px solid darkorange;
+    .conteiner .box3{
+        flex: 1;
+    }
+    .conteiner-aside{
+        border-top: 5px solid tomato;
+        border-bottom: 5px solid tomato;
+        border-left: 4px solid tomato;
         background-color: lightgray;
     }
     .conteiner aside h3{
         color: tomato;
         font-size: 25px;
-        margin: 0px 0px 5px 0px;
+        margin: 0px 0px 10px 0px;
         padding: 3px;
-        text-align: center;
     }
     .conteiner aside p{
         visibility: visible;
         color: rgb(70, 70, 70);
         font-size: 16px;
         margin: 0px 0px 5px 0px;
+    }
+    .conteiner2 .box4{
+    flex: 3;
+    }
+    .conteiner2 .box5{
+    flex: 1;
+    }
+    .conteiner2 .box6{
+    flex: 1;
     }
 }
