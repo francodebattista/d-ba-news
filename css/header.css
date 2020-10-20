@@ -19,6 +19,13 @@ header h1{
 ul{
     display: none;
 }
+.date{
+    font-size: 12px;
+    color: darkorange;
+    margin-bottom: 3px;
+    margin-left: 3px;
+    float: right;
+}
 .menu{
     width: 30px;
     height: 4px;
@@ -46,10 +53,19 @@ ul{
         margin: 0px;
         font-family: serif;
     }
+    .date{
+        font-size: 15px;
+        color: darkorange;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        float: left;
+        display: block;
+    }
     .conteiner-navbar{
         background-color: slategrey;
         border: 1px solid grey;
         padding: 0px;
+        margin-top: 20px;
         margin-bottom: 10px;
         text-align: center;
         font-size: 25px;
