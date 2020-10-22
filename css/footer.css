@@ -8,15 +8,32 @@ footer{
 p{
     margin: 0px;
 }
+footer .link-github{
+    display: none;
+}
 .footer-class{
     font-size: 12px;
     font-style: italic;
 }
-@media only screen and (max-width: 768px){
+@media only screen and (min-width: 768px){
     footer{
         font-size: 10px;
     }
     footer-class{
         font-size: 9px;
+    }
+    footer .link-github{
+        display: inline;
+    }
+    footer .link-github a{
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 15px;
+        color: whitesmoke;
+    }
+    footer .link-github a:hover{
+        color: darkorange;
+        font-size: 20px;
+        text-decoration: underline;
     }
 }

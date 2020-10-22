@@ -32,6 +32,55 @@ ul{
     background-color: darkorange;
     margin: 5px 10px;
 }
+.fa {
+    padding: 5px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+.fa-facebook {
+    background: whitesmoke ;
+    color: #3B5998;
+}
+.fa-facebook:hover {
+    background: #3B5998;
+    color: white;
+  }
+.fa-twitter {
+    background: whitesmoke;
+    color: #55ACEE;
+}
+.fa-twitter:hover {
+    background: #55ACEE;
+    color: white;
+  }
+.fa-google {
+    background: whitesmoke;
+    color: #dd4b39;
+}
+.fa-google:hover {
+    background: #dd4b39;
+    color: white;
+  }
+.fa-linkedin {
+    background: whitesmoke;
+    color: #007bb5;
+}
+.fa-linkedin:hover {
+    background: #007bb5;
+    color: white;
+  }
+.fa-youtube {
+    background: whitesmoke;
+    color: #bb0000;
+}
+.fa-youtube:hover {
+    background: #bb0000;
+    color: white;
+  }
 .advertisement{
     margin: 2px 0px 5px 0px;
     padding: 0px;
@@ -40,6 +89,7 @@ ul{
 .advertisement img{
     width: 90%;
     margin-left: 5%;
+    height: auto;
 }
 @media only screen and (min-width: 768px){
     ul{
@@ -58,34 +108,42 @@ ul{
         color: darkorange;
         margin-bottom: 5px;
         margin-left: 5px;
-        float: left;
         display: block;
     }
-    .conteiner-navbar{
+    .fa {
+        padding: 5px;
+        font-size: 30px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 1px 2px;
+        border-radius: 50%;
+      }
+    .conainer-navbar{
         background-color: slategrey;
         border: 1px solid grey;
         padding: 0px;
-        margin-top: 20px;
+        margin-top: 0px;
         margin-bottom: 10px;
         text-align: center;
         font-size: 25px;
     }
-    .conteiner-navbar ul{
+    .conainer-navbar ul{
         list-style: none;
         padding: opx 0px 0px 10px;
         margin: 0px;
     }
-    .conteiner-navbar li{
+    .conainer-navbar li{
         display: inline;
     }
-    .conteiner-navbar a{
+    .conainer-navbar a{
         text-decoration: none;
         text-transform: uppercase;
         color: darkorange;
         padding-right: 25px;
         font-size: 20px;
     }
-    .conteiner-navbar a:hover{
+    .conainer-navbar a:hover{
         color: orange;
     }
     .current a{
@@ -101,7 +159,7 @@ ul{
         margin: 2px 0px 15px 0px;
         margin-left: 5%;
     }
-    .botton{
+    .button{
         display: none;
     }
 }

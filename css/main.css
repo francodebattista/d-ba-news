@@ -7,101 +7,101 @@ h3{
     background-color: lightgrey;
     width: 100%;
 }
-.main-conteiner{
+.main-conainer{
     display: flex;
     flex-direction: column;
 }
-.conteiner{
+.conainer{
     flex: 4;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
-.conteiner div{
+.conainer div{
     margin: 1px 1px 2px 1px;
     border-bottom: 1px solid black;
     padding-bottom: 2px;
 }
-.conteiner a{
+.conainer a{
     text-decoration: none;
 }
-.conteiner a h2{
+.conainer a h2{
     color: black;
     text-decoration: none;
     margin-top: 2px;
     margin-bottom: 1px;
     font: 17px;
 }
-.conteiner a h2:hover{
+.conainer a h2:hover{
     color: orange;
 }
-.conteiner a h4{
+.conainer a h4{
     color: black;
     text-decoration: none;
     margin-top: 2px;
     margin-bottom: 1px;
     font: 17px;
 }
-.conteiner a p{
+.conainer a p{
     color: rgb(83, 83, 83);
     text-decoration: none;
     margin: 0px;
     font-size: 13;
 }
-.conteiner .box1{
+.conainer .box1{
     flex: 1;
 }
-.conteiner .box1 a h2{
+.conainer .box1 a h2{
     color: darkorange;
     align-self: center;
 }
-.conteiner .box1 a h2:hover{
+.conainer .box1 a h2:hover{
     color: darkgray;
     font-weight: bold;
 }
-.conteiner .box2{
+.conainer .box2{
     flex: 1;
 }
-.conteiner .box3{
+.conainer .box3{
     flex: 1;
 }
-.conteiner-aside{
+.conainer-aside{
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
  }
- .conteiner-aside div{
+ .conainer-aside div{
      margin: 1px 1px 2px 1px;
      border-bottom: 1px solid black;
      padding-bottom: 2px;
      background-color: lightgrey;
  }
- .conteiner-aside a{
+ .conainer-aside a{
      text-decoration: none;
  }
- .conteiner-aside h3{
+ .conainer-aside h3{
      color: tomato;
      font-size: 25px;
      margin: 0px 0px 5px 0px;
      text-align: center;
  }
- .conteiner-aside a h4{
+ .conainer-aside a h4{
      color: black;
      font-size: 20px;
      margin: 0px 0px 5px 0px;
  }
- .conteiner-aside a h4:hover{
+ .conainer-aside a h4:hover{
      color: tomato;
  }
- .conteiner-aside p{
+ .conainer-aside p{
      color: rgb(83, 83, 83);
      font-size: 15px;
      margin: 0px 0px 5px 0px;
  }
-.conteiner2{
+.conainer2{
     margin-top: 10px;
     flex: 3;
     display: flex;
@@ -111,62 +111,62 @@ h3{
     align-items: flex-start;
     border-top: 3px solid darkorange;
 }
-.conteiner2 div{
+.conainer2 div{
     margin: 1px 1px 2px 1px;
     border-bottom: 1px solid black;
     padding-bottom: 2px;
 }
-.conteiner2 a{
+.conainer2 a{
     text-decoration: none;
 }
-.conteiner2 a h2{
+.conainer2 a h2{
     color: black;
     text-decoration: none;
     margin-top: 2px;
     margin-bottom: 1px;
     font: 17px;
 }
-.conteiner2 a h2:hover{
+.conainer2 a h2:hover{
     color: orange;
 }
-.conteiner2 a p{
+.conainer2 a p{
     color: rgb(83, 83, 83);
     text-decoration: none;
     margin: 0px;
     font-size: 13;
 }
-.conteiner2 .box4{
+.conainer2 .box4{
     flex: 3;
 }
-.conteiner2 .box5{
+.conainer2 .box5{
     flex: 1;
 }
-.conteiner2 .box6{
+.conainer2 .box6{
     flex: 1;
 }
 @media only screen and (max-width: 480px){
-    .conteiner a{
+    .conainer a{
         font-size: 10px;
     }
-    .conteiner2{
+    .conainer2{
         margin-top: 0px;
     }
-    .conteiner2 a{
+    .conainer2 a{
         font-size: 10px;
     }
-    .conteiner-aside h3{
+    .conainer-aside h3{
         color: tomato;
         font-size: 20px;
         margin: 0px 0px 3px 0px;
         text-align: center;
     }
-    .conteiner-aside a img{
+    .conainer-aside a img{
         display: none;
     }
-    .conteiner-aside a h4{
+    .conainer-aside a h4{
         font-size: 15px;
     }
-    .conteiner-aside a p{
+    .conainer-aside a p{
         display: none;
     }
 }
@@ -174,99 +174,99 @@ h3{
     aside{
         background-color: whitesmoke;
     }
-    .main-conteiner{
+    .main-conainer{
         flex-direction: row;
         flex-wrap: wrap;
         flex: 50%;
     }
-    .conteiner-aside{
+    .conainer-aside{
         align-items: baseline;
         justify-content: flex-start;
         margin-top: 0px;
     }
-    .conteiner-aside h3{
+    .conainer-aside h3{
         margin: 0px;
     }
-    .conteiner2{
+    .conainer2{
         flex-direction: row;
         flex-wrap: wrap;
         border-top: 0px;
     }
-    .conteiner2 .box4{
+    .conainer2 .box4{
         flex: 1;
     }
-    .conteiner2 .box5{
+    .conainer2 .box5{
         flex: 1;
     }
-    .conteiner2 .box6{
+    .conainer2 .box6{
         flex: 1;
     }
 }
 @media only screen and (min-width: 900px){
-    .main-conteiner{
+    .main-conainer{
         flex-direction: row;
     }
-    .conteiner{
+    .conainer{
     flex-direction: row;
     flex-wrap: wrap;
     }
-    .conteiner div{
+    .conainer div{
         margin: 2px;
         border-bottom: 1px;
     }
-    .conteiner2{
+    .conainer2{
         flex-direction: row;
         flex-wrap: wrap;
         }
-    .conteiner2 div{
+    .conainer2 div{
             margin: 2px;
             border-bottom: 1px;
         }
-    .conteiner a h2{
+    .conainer a h2{
         margin-top: 5px;
         margin-bottom: 5px;
         flex-flow: row wrap;
     }
-    .conteiner a p{
+    .conainer a p{
         font-size: 15;
     }
-    .conteiner .box1{
+    .conainer .box1{
         margin-right: 5px;
         padding-right: 5px;
         flex: 3;
     }
-    .conteiner .box2{
+    .conainer .box2{
         margin-right: 5px;
         flex: 1;
     }
-    .conteiner .box3{
+    .conainer .box3{
         flex: 1;
     }
-    .conteiner-aside{
+    .conainer-aside{
         border-top: 5px solid tomato;
         border-bottom: 5px solid tomato;
         border-left: 4px solid tomato;
         background-color: lightgray;
     }
-    .conteiner aside h3{
+    .conainer aside h3{
         color: tomato;
         font-size: 25px;
         margin: 0px 0px 10px 0px;
         padding: 3px;
     }
-    .conteiner aside p{
+    .conainer aside p{
         visibility: visible;
         color: rgb(70, 70, 70);
         font-size: 16px;
         margin: 0px 0px 5px 0px;
     }
-    .conteiner2 .box4{
+    .conainer2 .box4{
     flex: 2;
     }
-    .conteiner2 .box5{
+    .conainer2 .box5{
     flex: 1;
     }
-    .conteiner2 .box6{
+    .conainer2 .box6{
     flex: 1;
     }
 }
