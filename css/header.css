@@ -1,4 +1,4 @@
-body{
+body {
     background-color: whitesmoke;
     line-height: 1;
     font-size: 16px;
@@ -8,7 +8,8 @@ body{
     padding: 0 px;
     display: block;
 }
-header h1{
+
+header h1 {
     text-align: center;
     font-size: 50px;
     color: darkorange;
@@ -16,22 +17,26 @@ header h1{
     margin: 0px 0px 10px 0px;
     font-family: serif;
 }
-ul{
+
+ul {
     display: none;
 }
-.date{
+
+.date {
     font-size: 12px;
     color: darkorange;
     margin-bottom: 3px;
     margin-left: 3px;
     float: right;
 }
-.menu{
+
+.menu {
     width: 30px;
     height: 4px;
     background-color: darkorange;
     margin: 5px 10px;
 }
+
 .fa {
     padding: 5px;
     font-size: 15px;
@@ -41,61 +46,75 @@ ul{
     margin: 5px 2px;
     border-radius: 50%;
 }
+
 .fa-facebook {
     background: whitesmoke ;
     color: #3B5998;
 }
+
 .fa-facebook:hover {
     background: #3B5998;
     color: white;
-  }
+}
+
 .fa-twitter {
     background: whitesmoke;
     color: #55ACEE;
 }
+
 .fa-twitter:hover {
     background: #55ACEE;
     color: white;
-  }
+}
+
 .fa-google {
     background: whitesmoke;
     color: #dd4b39;
 }
+
 .fa-google:hover {
     background: #dd4b39;
     color: white;
-  }
+}
+
 .fa-linkedin {
     background: whitesmoke;
     color: #007bb5;
 }
+
 .fa-linkedin:hover {
     background: #007bb5;
     color: white;
-  }
+}
+
 .fa-youtube {
     background: whitesmoke;
     color: #bb0000;
 }
+
 .fa-youtube:hover {
     background: #bb0000;
     color: white;
-  }
-.advertisement{
+}
+
+.advertisement {
     margin: 2px 0px 5px 0px;
     padding: 0px;
     width: 100%;
 }
-.advertisement img{
+
+.advertisement img {
     width: 90%;
     margin-left: 5%;
     height: auto;
 }
+
 @media only screen and (min-width: 768px){
-    ul{
+    ul {
         display: inline;
     }
-    header h1{
+
+    header h1 {
         text-align: center;
         font-size: 40px;
         color: darkorange;
@@ -103,13 +122,15 @@ ul{
         margin: 0px;
         font-family: serif;
     }
-    .date{
+
+    .date {
         font-size: 15px;
         color: darkorange;
         margin-bottom: 5px;
         margin-left: 5px;
         display: block;
     }
+
     .fa {
         padding: 5px;
         font-size: 30px;
@@ -119,7 +140,8 @@ ul{
         margin: 1px 2px;
         border-radius: 50%;
       }
-    .conainer-navbar{
+
+    .container-navbar {
         background-color: slategrey;
         border: 1px solid grey;
         padding: 0px;
@@ -128,38 +150,45 @@ ul{
         text-align: center;
         font-size: 25px;
     }
-    .conainer-navbar ul{
+
+    .container-navbar ul {
         list-style: none;
         padding: opx 0px 0px 10px;
         margin: 0px;
     }
-    .conainer-navbar li{
+
+    .container-navbar li {
         display: inline;
     }
-    .conainer-navbar a{
+
+    .container-navbar a {
         text-decoration: none;
         text-transform: uppercase;
         color: darkorange;
         padding-right: 25px;
         font-size: 20px;
     }
-    .conainer-navbar a:hover{
+
+    .container-navbar a:hover{
         color: orange;
     }
-    .current a{
+
+    .current a {
         color: white;
         font-weight: bold;
     }
-    .advertisement{
+    .advertisement {
         margin: 1px 0px 3px 0px;
         padding: 0px;
     }
-    .advertisement img{
+
+    .advertisement img {
         width: 90%;
         margin: 2px 0px 15px 0px;
         margin-left: 5%;
     }
-    .button{
+
+    .button {
         display: none;
     }
 }

@@ -1,107 +1,126 @@
-aside{
+aside {
     flex: 1;
     border-top: 3px solid darkorange;
     background-color: lightgrey;
 }
-h3{
+
+h3 {
     background-color: lightgrey;
     width: 100%;
 }
-.main-conainer{
+
+.main-container {
     display: flex;
     flex-direction: column;
 }
-.conainer{
+
+.container {
     flex: 4;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
-.conainer div{
+
+.container div {
     margin: 1px 1px 2px 1px;
     border-bottom: 1px solid black;
     padding-bottom: 2px;
 }
-.conainer a{
+
+.container a {
     text-decoration: none;
 }
-.conainer a h2{
+
+.container a h2 {
     color: black;
     text-decoration: none;
     margin-top: 2px;
     margin-bottom: 1px;
     font: 17px;
 }
-.conainer a h2:hover{
+
+.container a h2:hover {
     color: orange;
 }
-.conainer a h4{
+
+.container a h4 {
     color: black;
     text-decoration: none;
     margin-top: 2px;
     margin-bottom: 1px;
     font: 17px;
 }
-.conainer a p{
+
+.container a p {
     color: rgb(83, 83, 83);
     text-decoration: none;
     margin: 0px;
     font-size: 13;
 }
-.conainer .box1{
+
+.container .box1 {
     flex: 1;
 }
-.conainer .box1 a h2{
+
+.container .box1 a h2 {
     color: darkorange;
     align-self: center;
 }
-.conainer .box1 a h2:hover{
+
+.container .box1 a h2:hover {
     color: darkgray;
     font-weight: bold;
 }
-.conainer .box2{
+
+.container .box2 {
     flex: 1;
 }
-.conainer .box3{
+
+.container .box3 {
     flex: 1;
 }
-.conainer-aside{
+
+.container-aside {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
- }
- .conainer-aside div{
+    }
+
+ .container-aside div {
      margin: 1px 1px 2px 1px;
      border-bottom: 1px solid black;
      padding-bottom: 2px;
      background-color: lightgrey;
- }
- .conainer-aside a{
+    }
+
+ .container-aside a {
      text-decoration: none;
- }
- .conainer-aside h3{
+    }
+
+ .container-aside h3 {
      color: tomato;
      font-size: 25px;
      margin: 0px 0px 5px 0px;
      text-align: center;
- }
- .conainer-aside a h4{
+    }
+ .container-aside a h4 {
      color: black;
      font-size: 20px;
      margin: 0px 0px 5px 0px;
- }
- .conainer-aside a h4:hover{
+    }
+
+ .container-aside a h4:hover {
      color: tomato;
- }
- .conainer-aside p{
+    }
+ .container-aside p {
      color: rgb(83, 83, 83);
      font-size: 15px;
      margin: 0px 0px 5px 0px;
- }
-.conainer2{
+    }
+.container2 {
     margin-top: 10px;
     flex: 3;
     display: flex;
@@ -111,162 +130,200 @@ h3{
     align-items: flex-start;
     border-top: 3px solid darkorange;
 }
-.conainer2 div{
+
+.container2 div {
     margin: 1px 1px 2px 1px;
     border-bottom: 1px solid black;
     padding-bottom: 2px;
 }
-.conainer2 a{
+
+.container2 a {
     text-decoration: none;
 }
-.conainer2 a h2{
+
+.container2 a h2 {
     color: black;
     text-decoration: none;
     margin-top: 2px;
     margin-bottom: 1px;
     font: 17px;
 }
-.conainer2 a h2:hover{
+
+.container2 a h2:hover {
     color: orange;
 }
-.conainer2 a p{
+
+.container2 a p {
     color: rgb(83, 83, 83);
     text-decoration: none;
     margin: 0px;
     font-size: 13;
 }
-.conainer2 .box4{
+
+.container2 .box4 {
     flex: 3;
 }
-.conainer2 .box5{
+
+.container2 .box5 {
     flex: 1;
 }
-.conainer2 .box6{
+
+.container2 .box6 {
     flex: 1;
 }
+
 @media only screen and (max-width: 480px){
-    .conainer a{
+    .container a {
         font-size: 10px;
     }
-    .conainer2{
+
+    .container2 {
         margin-top: 0px;
     }
-    .conainer2 a{
+
+    .container2 a {
         font-size: 10px;
     }
-    .conainer-aside h3{
+
+    .container-aside h3 {
         color: tomato;
         font-size: 20px;
         margin: 0px 0px 3px 0px;
         text-align: center;
     }
-    .conainer-aside a img{
+
+    .container-aside a img {
         display: none;
     }
-    .conainer-aside a h4{
+
+    .container-aside a h4 {
         font-size: 15px;
     }
-    .conainer-aside a p{
+
+    .container-aside a p {
         display: none;
     }
 }
 @media only screen and (min-width: 768px){
-    aside{
+    aside {
         background-color: whitesmoke;
     }
-    .main-conainer{
+
+    .main-container {
         flex-direction: row;
         flex-wrap: wrap;
         flex: 50%;
     }
-    .conainer-aside{
+
+    .container-aside {
         align-items: baseline;
         justify-content: flex-start;
         margin-top: 0px;
     }
-    .conainer-aside h3{
+
+    .container-aside h3 {
         margin: 0px;
     }
-    .conainer2{
+
+    .container2 {
         flex-direction: row;
         flex-wrap: wrap;
         border-top: 0px;
     }
-    .conainer2 .box4{
+
+    .container2 .box4 {
         flex: 1;
     }
-    .conainer2 .box5{
+
+    .container2 .box5 {
         flex: 1;
     }
-    .conainer2 .box6{
+
+    .container2 .box6 {
         flex: 1;
     }
 }
 @media only screen and (min-width: 900px){
-    .main-conainer{
+    .main-container {
         flex-direction: row;
     }
-    .conainer{
+
+    .container {
     flex-direction: row;
     flex-wrap: wrap;
     }
-    .conainer div{
+
+    .container div {
         margin: 2px;
         border-bottom: 1px;
     }
-    .conainer2{
+
+    .container2 {
         flex-direction: row;
         flex-wrap: wrap;
-        }
-    .conainer2 div{
-            margin: 2px;
-            border-bottom: 1px;
-        }
-    .conainer a h2{
+    }
+
+    .container2 div {
+        margin: 2px;
+        border-bottom: 1px;
+    }
+
+    .container a h2 {
         margin-top: 5px;
         margin-bottom: 5px;
         flex-flow: row wrap;
     }
-    .conainer a p{
+
+    .container a p {
         font-size: 15;
     }
-    .conainer .box1{
+
+    .container .box1 {
         margin-right: 5px;
         padding-right: 5px;
         flex: 3;
     }
-    .conainer .box2{
+
+    .container .box2 {
         margin-right: 5px;
         flex: 1;
     }
-    .conainer .box3{
+
+    .container .box3 {
         flex: 1;
     }
-    .conainer-aside{
+
+    .container-aside {
         border-top: 5px solid tomato;
         border-bottom: 5px solid tomato;
         border-left: 4px solid tomato;
         background-color: lightgray;
     }
-    .conainer aside h3{
+
+    .container aside h3 {
         color: tomato;
         font-size: 25px;
         margin: 0px 0px 10px 0px;
         padding: 3px;
     }
-    .conainer aside p{
+
+    .container aside p {
         visibility: visible;
         color: rgb(70, 70, 70);
         font-size: 16px;
         margin: 0px 0px 5px 0px;
     }
-    .conainer2 .box4{
+
+    .container2 .box4 {
     flex: 2;
     }
-    .conainer2 .box5{
+
+    .container2 .box5 {
     flex: 1;
     }
-    .conainer2 .box6{
+
+    .container2 .box6 {
     flex: 1;
     }
+    
 }
