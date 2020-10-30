@@ -4,11 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>D-BA NEWS - Subscription</title>
-        <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/subscription.css">
         <link rel="stylesheet" href="css/footer.css">
+        <script src="Js/subscription.js"></script>
     </head>
     <body>
         <header>
@@ -46,18 +46,18 @@
                     </navbar>
                 </div>
         </header>
-    <!--advertisement-->
+        <!--advertisement-->
         <section class="advertisement">
             <img src="images/adv1.jpeg" alt="first-add">
         </section>
-    <!--subscription-->
+        <!--subscription-->
         <h2 class="subscription-title">Subscribe</h2>
         <section>
             <form>
                 <div class="form-conteiner">
                     <div class="flex-item-left">
                         <label class="title">Full Name</label>
-                        <input type="text" class="input-value" placeholder="Type your full name">
+                        <input type="text" class="input-value" id="new-name" placeholder="Type your full name">
                         <p class= "error">Debe tener más de 6 letras y al menos un espacio entre medio</p>
                     </div>
                     <div class="flex-item-right">
@@ -107,7 +107,7 @@
                         <p class="no-error">Número de 7 u 8 dígitos.</p>
                     </div>
                 </div>
-                <button class="btn-send">Enviar</button>
+                <button onclick="buttonClick()" class="btn-send" id="send">Enviar</button>
             </form>
         </section>
         <!--footer-->
@@ -121,5 +121,5 @@
             </a>
         </p>
         </footer>
-    </body>
+    </body>    
 </html>
