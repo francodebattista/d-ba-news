@@ -21,14 +21,14 @@ var name = "Franco ";
 var space =" ";
 function checkName (a) {
     if(a.length < 6){
-        return "Name: < 7 number";
+        return "Name: < 6 number";
     }
     for(i=0; i<a.length; i++){
         if (space.indexOf(a.charAt(i),0)!=-1){
            return "Name: Ok";
         }
      }
-    return "Name: Have Space"
+    return "Name: Have Space" // problem split 
 }
 console.log(checkName(name))
 
@@ -37,48 +37,43 @@ console.log(checkName(name))
 // VARIABLE A CAMBIAR email
 var email = "fdebattista@gmail.com";
 //console.log(email)
-
-var mailArray = []
-
-for (i = 0; i <= email.length-1; i++){
-    mailArray.push(email[i]);
-    var mailCheckArroba = mailArray.includes("@");
-    var mailCheckSpace = mailArray.includes(" ");
+function checkmail (a) {
+    var simbol="()[]{}-_) !·$%&/=?¿^*¨ç|#¬¡º";
+    for(i=0; i<a.length; i++){
+        if (simbol.indexOf(a.charAt(i),0)!=-1){
+           return "Mail: have a simbol";
+        }
+        for(i=0; i<a.length; i++){
+            if (space.indexOf(a.charAt(i),0)!=-1){
+               return "Mail: Have a space";
+            }
+         }
+        var simbolArroba="@";
+        for(i=0; i<a.length; i++){
+            if (simbolArroba.indexOf(a.charAt(i),0)!=-1){
+               return "Mail: Ok";
+            }
+        }
+     }
+    return "Mail: do not have @" // problem split 
 }
-//console.log(mailArray)
-
-if (mailCheckArroba ===true){
-    //console.log("formato mail válido");
-} else {
-    //console.log("mal formato mail");
-}
-if (mailCheckSpace ===true){
-    //console.log("mal formato mail ");
-} else {
-    var mail1 = true
-    //console.log("formato mail válido");
-}
-if (mailCheckArroba === mail1 === true){
-    console.log("Mail: Correcto");
-} else {
-    console.log("Mail: Incorrecto");
-}
+console.log(checkmail(email))
 
 
 // ***** check pasword *****
 // VARIABLE to change pasword
-var pasword = "Franco123";
+var password = "Franco 123";
+function checkpasswordSpace (a){
+    if (a.length >= 8){
+        return"Password: Ok Cant Carac";
+    }
+    return "Password: must have at least 8 characters";
+}
+    console.log(checkpasswordSpace(password));
 
-if (pasword.length >= 8){
-    var paswordLength = true
-    console.log("Password: Ok Cant Carac");
-}
-    else {
-    console.log("Password: must have at least 8 characters");
-}
 
 var numbers="0123456789";
-function paswordCheckNumbers(a){
+function passwordCheckNumbers(a){
    for(i=0; i<a.length; i++){
       if (numbers.indexOf(a.charAt(i),0)!=-1){
          return "Password: Have numbers";
@@ -86,11 +81,11 @@ function paswordCheckNumbers(a){
    }
    return "Password: Have no numbers";
 }
-console.log(paswordCheckNumbers(pasword))
+console.log(passwordCheckNumbers(password))
 
 
 var letters="abcdefghyjklmnñopqrstuvwxyz";
-function paswordCheckLetters(a){
+function passwordCheckLetters(a){
     a = a.toLowerCase()
    for(i=0; i<a.length; i++){
       if (letters.indexOf(a.charAt(i),0)!=-1){
@@ -99,11 +94,11 @@ function paswordCheckLetters(a){
    }
    return "Password: Have no letters";
 }
-console.log(paswordCheckLetters(pasword))
+console.log(passwordCheckLetters(password))
 
 
 var passwordSpace =" ";
-function paswordCheckSpaces(a){
+function passwordCheckSpaces(a){
    for(i=0; i<a.length; i++){
       if (passwordSpace.indexOf(a.charAt(i),0)!=-1){
          return "Password: Have Space";
@@ -111,16 +106,16 @@ function paswordCheckSpaces(a){
    }
    return "Password: Have no Space";
 }
-console.log(paswordCheckSpaces(pasword))
+console.log(passwordCheckSpaces(password))
 
 // ***** check repeatPasword *****
 // VARIABLE to change repeatPasword
 var repeatPassword = "Franco123"
 
 function checkPassword (a) {
-    pasword = pasword.toLowerCase; // should distingh distinguish upper and lower case?
+    password = password.toLowerCase; // should distingh distinguish upper and lower case?
     a = a.toLowerCase;
-    if (a === pasword){
+    if (a === password){
         return "repeatPassword: = Password";
     } else {
         return "repeatPassword: != Password";
