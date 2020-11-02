@@ -58,23 +58,30 @@
                     <div class="flex-item-left">
                         <label class="title">Full Name</label>
                         <input type="text" class="input-value" id="new-name" placeholder="Type your full name">
-                        <p class= "no-error">Debe tener más de 6 letras y al menos un espacio entre medio</p>
+                        <label class= "no-error error" id="nameError">
+                            Must have 6 letters or more and a space between name and surname
+                        </label>
                     </div>
                     <div class="flex-item-right">
                         <label class="title">Email</label>
-                        <input type="email" class="input-value" id="fullName" placeholder="Type your Email">
-                        <p class="no-error">debe tener un formato de email válido.
-                        </p>
+                        <input type="email" class="input-value" id="email" placeholder="Type your Email">
+                        <label class="no-error error" id="emailerror">
+                            Must have a correct email format
+                        </label>
                     </div>
                     <div class="flex-item-left">
                         <label class="title">Pasword</label>
-                        <input type="password" class="input-value" placeholder="Type your pasword">
-                        <p class="error">Al menos 8 caracteres, formados por letras y números.</p>
+                        <input type="password" class="input-value" id="password" placeholder="Type your pasword">
+                        <label class="no-error error" id="passwordError">
+                            Must have at least 8 characters, letters and numbers.
+                        </label>
                     </div>
                     <div class="flex-item-right">
                         <label class="title">Repeat your pasword</label>
-                        <input type="password" class="input-value" placeholder="Repeat your pasword">
-                        <p class="no-error">Al menos 8 caracteres, formados por letras y números.</p>
+                        <input type="password" class="input-value" id="repeatPassword" placeholder="Repeat your pasword">
+                        <label class="no-error error" id="repeatPasswordError">
+                            Is diferent from the Password.
+                        </label>
                     </div>
                     <div class="flex-item-left">
                         <label class="title">Age</label>
@@ -103,7 +110,7 @@
                     </div>
                     <div class="flex-item-right">
                         <label class="title">DNI</label>
-                        <input type="number" class="input-value" placeholder="Type your dni">
+                        <input type="number" class="input-value" id="dni" placeholder="Type your dni">
                         <p class="error">Número de 7 u 8 dígitos.</p>
                     </div>
                 </div>
