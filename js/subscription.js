@@ -1,6 +1,3 @@
-
-
-
 window.onload = function() {
     // ***** check full name *****
     var inputName = document.getElementById("new-name");
