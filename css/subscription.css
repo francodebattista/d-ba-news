@@ -103,4 +103,9 @@ form {
         margin-left: 3px;
         color: rgb(119, 119, 119);
     }
+
+    .btn-send {
+
+        text-align:center
+    }
 }

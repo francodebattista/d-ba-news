@@ -85,36 +85,50 @@
                     </div>
                     <div class="flex-item-left">
                         <label class="title">Age</label>
-                        <input type="number" class="input-value" placeholder="18">
-                        <p class="no-error">Número entero mayor o igual a 18.</p>
+                        <input type="number" class="input-value" id="age" placeholder="18">
+                        <label class="no-error error" id="ageError">
+                            Must be older than 18 years.
+                        </label>
                     </div>
                     <div class="flex-item-right">
                         <label class="title">Phone Number</label>
-                        <input type="text" class="input-value" placeholder="Type your phone number">
-                        <p class="no-error">Número de al menos 7 dígitos, no aceptar espacios, guiones ni paréntesis.</p>
+                        <input type="text" class="input-value" id="phoneNumber" placeholder="Type your phone number">
+                        <label class="no-error error" id="phoneNumberError">
+                            Must have at least 7 numbers and can not have any simbol or spaces.
+                        </label>
                     </div>
                     <div class="flex-item-left">
                         <label class="title">Address</label>
-                        <input type="text" class="input-value" placeholder="Type your address">
-                        <p class="error">Al menos 5 caracteres, con letras, números y un espacio en el medio.</p>
+                        <input type="text" class="input-value" id="address" placeholder="Type your address">
+                        <label class="no-error error" id="addressError">
+                            Must have at least 5 characters with letters, numbers and a space between.
+                        </label>
                     </div>
-                <div class="flex-item-right">
+                    <div class="flex-item-right">
                         <label class="title">City / Town</label>
-                        <input type="text" class="input-value" placeholder="Type your City / Town">
-                        <p class="no-error">Al menos 3 caracteres.</p>
+                        <input type="text" class="input-value" id="city" placeholder="Type your City / Town">
+                        <label class="no-error error" id="cityError">
+                            Must have at least 3 characters.
+                        </label>
                     </div> 
                     <div class="flex-item-left">
                         <label class="title">Postal Code</label>
-                        <input type="number" class="input-value" placeholder="Type your postal code">
-                        <p class="no-error">Al menos 3 caracteres.</p>
+                        <input type="number" class="input-value" id="postalCode" placeholder="Type your postal code">
+                        <label class="no-error error" id="postalCodeError">
+                            Al menos 3 caracteres.
+                        </label>
                     </div>
                     <div class="flex-item-right">
                         <label class="title">DNI</label>
                         <input type="number" class="input-value" id="dni" placeholder="Type your dni">
-                        <p class="error">Número de 7 u 8 dígitos.</p>
+                        <label class="no-error error" id="dniError">
+                            Must have between 7 and 8 numbers.
+                        </label>
                     </div>
                 </div>
-                <button onclick="buttonClick()" class="btn-send" id="send">Enviar</button>
+                <button class="btn-send" id="send">
+                    Send my subscription
+                </button>
             </form>
         </section>
         <!--footer-->
